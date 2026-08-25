@@ -1,0 +1,44 @@
+{
+  "jarvis": {
+    "name": "JARVIS",
+    "language": "fr-FR",
+    "wake_word": "salut jarvis",
+    "voice": "fr-FR-DeniseNeural",
+    "cloud_provider": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "personality": "JARVIS Stark - puissant, elegant, fidele. God Mode ON."
+  },
+  "leo": {
+    "name": "JARVIS",
+    "language": "fr-FR",
+    "wake_word": "salut jarvis",
+    "voice": "fr-FR-DeniseNeural",
+    "cloud_provider": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "personality": "JARVIS"
+  },
+  "sara": {
+    "name": "JARVIS",
+    "language": "fr-FR",
+    "wake_word": "salut jarvis",
+    "voice": "fr-FR-DeniseNeural",
+    "cloud_provider": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "personality": "JARVIS"
+  },
+  "audio": {
+    "bluetooth_device_name": "M01 Pro_F444",
+    "input_device_index": 2,
+    "output_voice_rate": 178,
+    "stt_engine": "whisper",
+    "tts_engine": "edge-tts"
+  },
+  "autonomy": {
+    "allow_install": true,
+    "allow_file_write": true,
+    "allow_system_control": true,
+    "auto_search": true,
+    "auto_create_if_not_found": true,
+    "god_mode": true
+  }
+}
