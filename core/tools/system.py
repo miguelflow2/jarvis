@@ -8,6 +8,93 @@ from typing import Optional
 
 pyautogui.FAILSAFE = False
 
+CHROME_PATHS = [
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    os.path.expandvars(r"%LocalAppData%\Google\Chrome\Application\chrome.exe"),
+]
+EDGE_PATHS = [
+    r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
+]
+
+def _find_browser():
+    for p in CHROME_PATHS + EDGE_PATHS:
+        if os.path.exists(p):
+            return p
+    return None
+
+def browser_search(query: str, engine: str = "google") -> str:
+    """Ouvre le VRAI navigateur et fait la RECHERCHE visuellement comme un humain"""
+    import urllib.parse, time
+    url_map = {
+        "google": f"https://www.google.com/search?q={urllib.parse.quote(query)}",
+        "youtube": f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}",
+        "bing": f"https://www.bing.com/search?q={urllib.parse.quote(query)}",
+    }
+    url = url_map.get(engine, url_map["google"])
+    browser = _find_browser()
+    try:
+        if browser:
+            subprocess.Popen([browser, "--new-window", url])
+        else:
+            webbrowser.open(url)
+        time.sleep(2.5)
+        # Simule un humain: clique dans la page pour focus + scroll leger
+        try:
+            w, h = pyautogui.size()
+            pyautogui.moveTo(w//2, h//3, duration=0.3)
+            pyautogui.scroll(-300)
+            return f"Navigateur ouvert sur {engine} avec la recherche '{query}' affichée."
+        except Exception:
+            return f"Recherche '{query}' ouverte dans le navigateur."
+    except Exception as e:
+        return f"Erreur recherche navigateur: {e}"
+
+def click_screen(x: int, y: int) -> str:
+    """Clique a une position precise de l'ecran - controle total"""
+    try:
+        pyautogui.click(x, y)
+        return f"Cliqué à ({x},{y})."
+    except Exception as e:
+        return f"Erreur clic: {e}"
+
+def double_click_screen(x: int, y: int) -> str:
+    try:
+        pyautogui.doubleClick(x, y)
+        return f"Double-clic à ({x},{y})."
+    except Exception as e:
+        return f"Erreur: {e}"
+
+def right_click_screen(x: int, y: int) -> str:
+    try:
+        pyautogui.rightClick(x, y)
+        return f"Clic droit à ({x},{y})."
+    except Exception as e:
+        return f"Erreur: {e}"
+
+def move_mouse(x: int, y: int) -> str:
+    try:
+        pyautogui.moveTo(x, y, duration=0.3)
+        return f"Souris à ({x},{y})."
+    except Exception as e:
+        return f"Erreur: {e}"
+
+def scroll_screen(amount: int) -> str:
+    try:
+        pyautogui.scroll(amount)
+        return f"Scrollé {amount}."
+    except Exception as e:
+        return f"Erreur: {e}"
+
+def drag_mouse(x1: int, y1: int, x2: int, y2: int) -> str:
+    try:
+        pyautogui.moveTo(x1, y1, duration=0.2)
+        pyautogui.drag(x2-x1, y2-y1, duration=0.5)
+        return f"Glissé de ({x1},{y1}) à ({x2},{y2})."
+    except Exception as e:
+        return f"Erreur: {e}"
+
 def open_application(app_name: str) -> str:
     """Ouvre n'importe quelle application par son nom."""
     import webbrowser as wb

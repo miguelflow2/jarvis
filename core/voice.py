@@ -49,6 +49,32 @@ def speak(text: str, voice="fr-FR-DeniseNeural"):
         loop = asyncio.new_event_loop()
         loop.run_until_complete(speak_edge(text, voice))
 
+def speak_streaming(text: str, voice="fr-FR-DeniseNeural"):
+    """Streaming TTS: parle phrase par phrase pendant la generation (-2s latence)"""
+    import re, threading
+    sentences = re.split(r'(?<=[.!?]) +', text)
+    def worker():
+        for s in sentences:
+            if s.strip():
+                speak(s.strip(), voice)
+    t = threading.Thread(target=worker, daemon=True)
+    t.start()
+    return t
+
+_whisper_model = None
+def transcribe_local(wav_path: str) -> str:
+    """Whisper 100% local (faster-whisper) - offline, prive, rapide"""
+    global _whisper_model
+    try:
+        if _whisper_model is None:
+            from faster_whisper import WhisperModel
+            _whisper_model = WhisperModel("small", device="cpu", compute_type="int8")
+        segments, _ = _whisper_model.transcribe(wav_path, language="fr", beam_size=1)
+        return " ".join(s.text for s in segments).strip()
+    except Exception as e:
+        print(f"[Whisper local error] {e}")
+        return ""
+
 def listen_fast(timeout=4, phrase_time=6, device_index=None) -> str:
     """Version ultra-rapide pour mode fluide - latence <1s"""
     import speech_recognition as sr
@@ -139,9 +165,31 @@ def listen_once(timeout=6, phrase_time=8, device_index=None) -> str:
         import traceback; traceback.print_exc()
         return ""
 
+def _check_mic_health():
+    """Verifie si PyAudio peut ouvrir un micro, sinon tente auto-reparation"""
+    try:
+        import pyaudio
+        p = pyaudio.PyAudio()
+        s = p.open(input=True, format=pyaudio.paInt16, channels=1, rate=16000, frames_per_buffer=1024)
+        s.close(); p.terminate()
+        return True
+    except Exception as e:
+        if "Unanticipated host error" in str(e) or "-9999" in str(e):
+            print("[AUDIO] Service audio bloque - auto-reparation...")
+            try:
+                import subprocess, time
+                subprocess.run(["net","stop","Audiosrv"], capture_output=True, timeout=5)
+                time.sleep(1)
+                subprocess.run(["net","start","Audiosrv"], capture_output=True, timeout=10)
+                time.sleep(2)
+                print("[AUDIO] Service redemarre, nouvel essai...")
+            except Exception:
+                pass
+        return False
+
 def listen_for_wake_word(device_index=None, timeout=None) -> str:
-    """Ecoute en continu jusqu'a entendre 'Hey Jarvis' - ultra sensible"""
-    import speech_recognition as sr
+    """Ecoute en continu jusqu'a entendre 'Hey Jarvis' - ultra sensible + auto-reparation"""
+    import speech_recognition as sr, time
     r = sr.Recognizer()
     r.energy_threshold = 250
     r.dynamic_energy_threshold = True
@@ -157,7 +205,12 @@ def listen_for_wake_word(device_index=None, timeout=None) -> str:
             device_index = 2
     try:
         with sr.Microphone(device_index=device_index) as source:
-            r.adjust_for_ambient_noise(source, duration=0.5)
+            try:
+                r.adjust_for_ambient_noise(source, duration=0.5)
+            except Exception as e:
+                if "stream is None" in str(e) or "Unanticipated" in str(e):
+                    raise OSError(f"Mic bloque: {e}")
+                raise
             audio = r.listen(source, timeout=timeout, phrase_time_limit=4)
         # Transcription legere via Google FR (rapide pour wake word)
         try:
@@ -186,7 +239,19 @@ def listen_for_wake_word(device_index=None, timeout=None) -> str:
                 return ""
     except sr.WaitTimeoutError:
         return ""
+    except OSError as e:
+        if "Mic bloque" in str(e) or "Unanticipated" in str(e) or "NoneType" in str(e):
+            _check_mic_health()
+            print("[Wake] Micro bloque, attente 3s et retry...")
+            import time; time.sleep(3)
+        else:
+            print(f"[Wake error] {e}")
+        return ""
     except Exception as e:
+        if "NoneType" in str(e) and "close" in str(e):
+            _check_mic_health()
+            import time; time.sleep(3)
+            return ""
         print(f"[Wake error] {e}")
         return ""
 

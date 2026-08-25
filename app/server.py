@@ -8,6 +8,10 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", "core"))
 from core.brain import JarvisBrain
 from core.vision import see_screen
 from core.memory import recall
+from core.profiles import get_current, set_current, list_profiles
+from core.correction import load_corr
+from core.plugins_loader import list_plugins
+from core.routines import list_watches
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -110,6 +114,28 @@ def iphone_queue():
     except:
         return {"commands": []}
 
+@app.get("/api/profile")
+def profile(set: str = None):
+    if set:
+        return {"result": set_current(set), "profile": get_current()}
+    return {"profile": get_current(), "available": list_profiles(), "corrections": len(load_corr()), "reminders": 0}
+
+@app.get("/api/plugins")
+def plugins():
+    return {"plugins": list_plugins()}
+
+@app.get("/api/watches")
+def watches():
+    return {"watches": list_watches().split("\n") if list_watches()!="Aucune veille" else []}
+
+@app.get("/api/logs")
+def logs():
+    import os
+    p = os.path.join(os.path.dirname(__file__), "..", "config", "sara_memory.json")
+    if os.path.exists(p):
+        return open(p, encoding="utf-8").read()[-8000:]
+    return "Pas de logs"
+
 @app.get("/api/status")
 def status():
     try:
@@ -120,7 +146,12 @@ def status():
 
 # Serve PWA
 app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "static")), name="static")
+app.mount("/dashboard", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "static")), name="dashboard")
 
 @app.get("/")
 def index():
     return FileResponse(os.path.join(os.path.dirname(__file__), "static", "index.html"))
+
+@app.get("/dashboard")
+def dashboard():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "static", "dashboard.html"))

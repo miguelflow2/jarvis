@@ -46,6 +46,21 @@ def main():
     except RuntimeError as e:
         print(f"\n{e}")
         return
+    # Verrou anti-double instance (evite 2 JARVIS qui se battent pour le micro)
+    import tempfile, psutil
+    lock_path = os.path.join(tempfile.gettempdir(), "jarvis.lock")
+    try:
+        if os.path.exists(lock_path):
+            with open(lock_path) as f:
+                pid = int(f.read().strip())
+            if psutil.pid_exists(pid):
+                print(f"[!] JARVIS deja en cours (PID {pid}) - fermeture de cette instance")
+                return
+        with open(lock_path, "w") as f:
+            f.write(str(os.getpid()))
+    except Exception:
+        pass
+
     speak("Jarvis en ligne. Dis Salut Jarvis une fois, ensuite on discute fluide.")
     print("="*60)
     print("MODE FLUIDE: Dis 'Salut Jarvis' UNE FOIS, puis parle normalement")
@@ -106,12 +121,16 @@ def main():
             continue
         print(f"\nToi: {text}")
         low = text.lower().strip()
+        # STOP PAROLE immediate
+        if low.strip() in ["arrete", "arrête", "arrête-toi", "arrete-toi", "chut", "tais-toi", "silence", "stop"] :
+            speak("J'arrête.", voice=JARVIS_CFG.get("voice","fr-FR-DeniseNeural"))
+            continue
         # Sortie fluide
-        if any(x in low for x in ["merci jarvis", "pause jarvis", "en veille jarvis", "stop jarvis", "au revoir jarvis"]):
+        if any(x in low for x in ["merci jarvis", "pause jarvis", "en veille jarvis", "au revoir jarvis"]):
             speak("Parfait, je reste en veille. Appelle-moi quand tu veux.")
             in_conversation = False
             continue
-        if low in ["merci", "pause", "stop"]:
+        if low in ["merci", "pause"]:
             speak("Je repasse en veille.")
             in_conversation = False
             continue

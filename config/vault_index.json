@@ -1,0 +1,682 @@
+{
+  "gmail": {
+    "site": "gmail",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://mail.google.com"
+  },
+  "omnivox": {
+    "site": "omnivox",
+    "username": "2650016",
+    "url": "https://cegeptr.omnivox.ca/intr/"
+  },
+  "nip-personnel": {
+    "site": "nip-personnel",
+    "username": "nip",
+    "url": ""
+  },
+  "www.paypal.com": {
+    "site": "www.paypal.com",
+    "username": "mtbofficiel45@gmail.com",
+    "url": "https://www.paypal.com/unifiedonboarding/entry"
+  },
+  "www.linkedin.com": {
+    "site": "www.linkedin.com",
+    "username": "default",
+    "url": "https://www.linkedin.com/checkpoint/rp/request-password-reset-submit-redir-email-pin"
+  },
+  "authentification.quebec.ca": {
+    "site": "authentification.quebec.ca",
+    "username": "fregoufacksouna@csduroy.qc.ca",
+    "url": "https://authentification.quebec.ca/realms/sqin/login-actions/registration"
+  },
+  "www.outsystems.com": {
+    "site": "www.outsystems.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.outsystems.com/Platform/Signup"
+  },
+  "www.jobbank.gc.ca": {
+    "site": "www.jobbank.gc.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.jobbank.gc.ca/reg/indregister1"
+  },
+  "m.facebook.com": {
+    "site": "m.facebook.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://m.facebook.com/login.php"
+  },
+  "admin.stan.store": {
+    "site": "admin.stan.store",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://admin.stan.store/register"
+  },
+  "sellfy.com": {
+    "site": "sellfy.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://sellfy.com/auth/password-reset-complete/"
+  },
+  "android://u0a-o7ivuokjnqmf1ciagyiwkxqslsrxa9zzyib4ygevu5tprf": {
+    "site": "android://u0A-O7Ivuokjnqmf1ciagyiwkxqsLSrXA9ZzyIb4yGEVu5tPRf",
+    "username": "becomeproofficiel@gmail.com",
+    "url": "android://u0A-O7Ivuokjnqmf1ciagyiwkxqsLSrXA9ZzyIb4yGEVu5tPRfhJbn8REHGmDAUkUCGf71TqwUcwSfwFObRssA==@com.twitter.android/"
+  },
+  "sellercentral.amazon.ca": {
+    "site": "sellercentral.amazon.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://sellercentral.amazon.ca/ap/signin"
+  },
+  "app.higherme.com": {
+    "site": "app.higherme.com",
+    "username": "Miguel ",
+    "url": "https://app.higherme.com/reset-password/fd192257ca1355fb23722c13fb771704"
+  },
+  "prod.education.gouv.qc.ca": {
+    "site": "prod.education.gouv.qc.ca",
+    "username": "327711628",
+    "url": "https://prod.education.gouv.qc.ca/pls/afep01/C17010202_PKG.val_confr_courrl_prc"
+  },
+  "cashsmooth.lovable.app": {
+    "site": "cashsmooth.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://cashsmooth.lovable.app/login"
+  },
+  "sellingstate1.lovable.app": {
+    "site": "sellingstate1.lovable.app",
+    "username": "fregoufacksouna@gmail.com",
+    "url": "https://sellingstate1.lovable.app/auth"
+  },
+  "www.etsy.com": {
+    "site": "www.etsy.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.etsy.com/ca-fr/join"
+  },
+  "supabase.com": {
+    "site": "supabase.com",
+    "username": "505384581130-90b8pnpr82s95laib15gt7kha7gv9i9c.apps.googleusercontent.com",
+    "url": "https://supabase.com/dashboard/project/jjrselmiteulgapeigsl/auth/providers"
+  },
+  "playzone3.lovable.app": {
+    "site": "playzone3.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://playzone3.lovable.app/auth"
+  },
+  "accounts.google.com": {
+    "site": "accounts.google.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://accounts.google.com/"
+  },
+  "preview-sandbox--69a10558045a26e18f18bab9.base44.app": {
+    "site": "preview-sandbox--69a10558045a26e18f18bab9.base44.app",
+    "username": "cine discover",
+    "url": "https://preview-sandbox--69a10558045a26e18f18bab9.base44.app/Register"
+  },
+  "p_9rkfocvoe7fxxgt2pewo2.rork.live": {
+    "site": "p_9rkfocvoe7fxxgt2pewo2.rork.live",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://p_9rkfocvoe7fxxgt2pewo2.rork.live/auth/signup"
+  },
+  "webbooster.bolt.host": {
+    "site": "webbooster.bolt.host",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://webbooster.bolt.host/"
+  },
+  "lumen5.com": {
+    "site": "lumen5.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://lumen5.com/auth/login/"
+  },
+  "192.168.2.1": {
+    "site": "192.168.2.1",
+    "username": "default",
+    "url": "http://192.168.2.1/mobile.html"
+  },
+  "jobs.legaultgroup.com": {
+    "site": "jobs.legaultgroup.com",
+    "username": "Miguelfreddy65@gmail.com",
+    "url": "https://jobs.legaultgroup.com/my-account/log-in.aspx"
+  },
+  "id-preview--6850ba4c-62ba-4f94-b825-45e4c184329e.lovable.app": {
+    "site": "id-preview--6850ba4c-62ba-4f94-b825-45e4c184329e.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://id-preview--6850ba4c-62ba-4f94-b825-45e4c184329e.lovable.app/login"
+  },
+  "expo.dev": {
+    "site": "expo.dev",
+    "username": "mgl16off",
+    "url": "https://expo.dev/signup"
+  },
+  "cinediscovers.lovable.app": {
+    "site": "cinediscovers.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://cinediscovers.lovable.app/"
+  },
+  "www.gianttiger.com": {
+    "site": "www.gianttiger.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.gianttiger.com/fr/account/register"
+  },
+  "accweb.mouv.desjardins.com": {
+    "site": "accweb.mouv.desjardins.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://accweb.mouv.desjardins.com/identifiantunique/securite-garantie/authentification/auth/manuel"
+  },
+  "portail.voyagesaplus.com": {
+    "site": "portail.voyagesaplus.com",
+    "username": "fregoufacksouna@csduroy.qc.ca",
+    "url": "https://portail.voyagesaplus.com/login"
+  },
+  "neapay.com": {
+    "site": "neapay.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://neapay.com//user/register.html"
+  },
+  "luxury3.gameassists.co.uk": {
+    "site": "luxury3.gameassists.co.uk",
+    "username": "LXCB0788112669",
+    "url": "https://luxury3.gameassists.co.uk/"
+  },
+  "p_l9lizdfemyeium89pgq10.rork.live": {
+    "site": "p_l9lizdfemyeium89pgq10.rork.live",
+    "username": "fregoufackgmail.com",
+    "url": "https://p_l9lizdfemyeium89pgq10.rork.live/auth/login"
+  },
+  "new.remakeit.io": {
+    "site": "new.remakeit.io",
+    "username": "681109",
+    "url": "https://new.remakeit.io/sign-in"
+  },
+  "payhip.com": {
+    "site": "payhip.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://payhip.com/auth/register"
+  },
+  "snapchat.com": {
+    "site": "snapchat.com",
+    "username": "mgl16on",
+    "url": "http://snapchat.com/"
+  },
+  "auth.optiml.ca": {
+    "site": "auth.optiml.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://auth.optiml.ca/u/login"
+  },
+  "www.bestbuy.ca": {
+    "site": "www.bestbuy.ca",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.bestbuy.ca/authentication/fr-ca/seconnecter"
+  },
+  "instagram.com": {
+    "site": "instagram.com",
+    "username": "Mgl16off",
+    "url": "https://instagram.com/"
+  },
+  "login.microsoftonline.com": {
+    "site": "login.microsoftonline.com",
+    "username": "fgoufac@loblaw.ca",
+    "url": "https://login.microsoftonline.com/eaa6cb52-58d7-45cd-8bd6-b1d2a8e61312/saml2"
+  },
+  "identity.walmart.com": {
+    "site": "identity.walmart.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://identity.walmart.com/account/signup"
+  },
+  "walmart.wd5.myworkdayjobs.com": {
+    "site": "walmart.wd5.myworkdayjobs.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://walmart.wd5.myworkdayjobs.com/fr-CA/WalmartExternal/job/Trois-Rivieres-QC/XMLNAME--CAN--Prpos-aux-caisses-libre-service_R-2454252/apply/autofillWithResume"
+  },
+  "www.enterprise.ca": {
+    "site": "www.enterprise.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.enterprise.ca/fr/enroll.html"
+  },
+  "dashboard.stripe.com": {
+    "site": "dashboard.stripe.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://dashboard.stripe.com/register"
+  },
+  "app.wisecut.ai": {
+    "site": "app.wisecut.ai",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://app.wisecut.ai/register"
+  },
+  "preview--gabby-review-boost-ai.base44.app": {
+    "site": "preview--gabby-review-boost-ai.base44.app",
+    "username": "cine discover",
+    "url": "https://preview--gabby-review-boost-ai.base44.app/Register"
+  },
+  "app.adalo.com": {
+    "site": "app.adalo.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://app.adalo.com/en/login"
+  },
+  "id.desjardins.com": {
+    "site": "id.desjardins.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://id.desjardins.com/staticp/gestion-identifiant-presentation/identifiant"
+  },
+  "biblio-catalogue.v3r.net": {
+    "site": "biblio-catalogue.v3r.net",
+    "username": "20000001018852",
+    "url": "https://biblio-catalogue.v3r.net/account"
+  },
+  "www.amazon.ca": {
+    "site": "www.amazon.ca",
+    "username": "mindcashofficiel@gmail.com",
+    "url": "https://www.amazon.ca/ap/register"
+  },
+  "gabby-review-boost-ai.base44.app": {
+    "site": "gabby-review-boost-ai.base44.app",
+    "username": "cine discover",
+    "url": "https://gabby-review-boost-ai.base44.app/"
+  },
+  "jacquebarber.bolt.host": {
+    "site": "jacquebarber.bolt.host",
+    "username": "ingenieurcutpro@gmail.com",
+    "url": "https://jacquebarber.bolt.host/admin"
+  },
+  "passwordreset.microsoftonline.com": {
+    "site": "passwordreset.microsoftonline.com",
+    "username": "default",
+    "url": "https://passwordreset.microsoftonline.com/"
+  },
+  "f0f5d4a1-d9f7-44d2-a222-f80de4f0dec6.lovableproject.com": {
+    "site": "f0f5d4a1-d9f7-44d2-a222-f80de4f0dec6.lovableproject.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://f0f5d4a1-d9f7-44d2-a222-f80de4f0dec6.lovableproject.com/signup"
+  },
+  "xalaflix.gg": {
+    "site": "xalaflix.gg",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://xalaflix.gg/login"
+  },
+  "www.instagram.com": {
+    "site": "www.instagram.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.instagram.com/accounts/emailsignup/"
+  },
+  "lovable.dev": {
+    "site": "lovable.dev",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://lovable.dev/login"
+  },
+  "preview--movixpro.lovable.app": {
+    "site": "preview--movixpro.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://preview--movixpro.lovable.app/"
+  },
+  "career17.sapsf.com": {
+    "site": "career17.sapsf.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://career17.sapsf.com/careers"
+  },
+  "www.koodomobile.com": {
+    "site": "www.koodomobile.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.koodomobile.com/kpre/login"
+  },
+  "us2.make.com": {
+    "site": "us2.make.com",
+    "username": "miguel",
+    "url": "https://us2.make.com/865605/scenarios/add"
+  },
+  "mindbridgeai1.lovable.app": {
+    "site": "mindbridgeai1.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://mindbridgeai1.lovable.app/signup"
+  },
+  "wd1.myworkdaysite.com": {
+    "site": "wd1.myworkdaysite.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://wd1.myworkdaysite.com/fr-CA/recruiting/tjx/TJX_EXTERNAL"
+  },
+  "register.marketwatch.com": {
+    "site": "register.marketwatch.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://register.marketwatch.com/free-register"
+  },
+  "idmsa.apple.com": {
+    "site": "idmsa.apple.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://idmsa.apple.com/appleauth/auth/authorize/signin"
+  },
+  "movixpro.lovable.app": {
+    "site": "movixpro.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://movixpro.lovable.app/"
+  },
+  "id.outsystems.dev": {
+    "site": "id.outsystems.dev",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://id.outsystems.dev/login"
+  },
+  "cegeptr-estd.omnivox.ca": {
+    "site": "cegeptr-estd.omnivox.ca",
+    "username": "2650016",
+    "url": "https://cegeptr-estd.omnivox.ca/ui/commun/security/password/1df96064-85a2-4a07-92cc-0102040cf329"
+  },
+  "xalaflix.io": {
+    "site": "xalaflix.io",
+    "username": "fregoufack@gmail.com",
+    "url": "https://xalaflix.io/login"
+  },
+  "android://rf2bmtdx6n5uymxwf2syvpr7kw1gtuhhatvyf8dhrmre8mvmwq": {
+    "site": "android://rF2BMtDX6N5uymxwf2Syvpr7kW1gTUHhATVyF8dhrmRE8mvmWQ",
+    "username": "mtbofficiel45@gmail.com",
+    "url": "android://rF2BMtDX6N5uymxwf2Syvpr7kW1gTUHhATVyF8dhrmRE8mvmWQ1KwSOvcxAEnpM52kL_VrS3omH3kq-I6N6SRQ==@com.paypal.android.p2pmobile/"
+  },
+  "prepaidselfserve.koodomobile.com": {
+    "site": "prepaidselfserve.koodomobile.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://prepaidselfserve.koodomobile.com/fr/koodo/create-account"
+  },
+  "vibesocial.bolt.host": {
+    "site": "vibesocial.bolt.host",
+    "username": "fregoufack@gmail.com",
+    "url": "https://vibesocial.bolt.host/"
+  },
+  "moneyflow-ai-persona-7ywi.bolt.host": {
+    "site": "moneyflow-ai-persona-7ywi.bolt.host",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://moneyflow-ai-persona-7ywi.bolt.host/"
+  },
+  "myaccount.ingramspark.com": {
+    "site": "myaccount.ingramspark.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://myaccount.ingramspark.com/Account/Signup"
+  },
+  "m.loveaholics.com": {
+    "site": "m.loveaholics.com",
+    "username": "Trois-Rivières ",
+    "url": "https://m.loveaholics.com/aff.php"
+  },
+  "35720672-5bb9-4de5-9e27-9a5d0afee36c.lovableproject.com": {
+    "site": "35720672-5bb9-4de5-9e27-9a5d0afee36c.lovableproject.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://35720672-5bb9-4de5-9e27-9a5d0afee36c.lovableproject.com/auth"
+  },
+  "auth.fizz.ca": {
+    "site": "auth.fizz.ca",
+    "username": "fregoufack@gmail.com",
+    "url": "https://auth.fizz.ca/oauth2/aus1gk401eKpy4ZWH697/v1/authorize"
+  },
+  "www.cinentreprise.com": {
+    "site": "www.cinentreprise.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.cinentreprise.com/films/spider-man-un-jour-nouveau"
+  },
+  "blend-smoothie.bolt.host": {
+    "site": "blend-smoothie.bolt.host",
+    "username": "default",
+    "url": "https://blend-smoothie.bolt.host/admin"
+  },
+  "accounts.pcid.ca": {
+    "site": "accounts.pcid.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://accounts.pcid.ca/create-account"
+  },
+  "p_0egc7js915y9xt9ysqc5p.rork.live": {
+    "site": "p_0egc7js915y9xt9ysqc5p.rork.live",
+    "username": "fregoufackgmail.com",
+    "url": "https://p_0egc7js915y9xt9ysqc5p.rork.live/auth/signup"
+  },
+  "dc43d5f9-f534-44a3-a12e-8309a2f99641-00-2hd4d2hzfft5v.kirk.r": {
+    "site": "dc43d5f9-f534-44a3-a12e-8309a2f99641-00-2hd4d2hzfft5v.kirk.r",
+    "username": "fregoufack@gmail.com",
+    "url": "https://dc43d5f9-f534-44a3-a12e-8309a2f99641-00-2hd4d2hzfft5v.kirk.replit.dev/register"
+  },
+  "app.netlify.com": {
+    "site": "app.netlify.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://app.netlify.com/signup/email"
+  },
+  "canadianoutlet.com": {
+    "site": "canadianoutlet.com",
+    "username": "default",
+    "url": "https://canadianoutlet.com/my-account/lost-password/"
+  },
+  "accounts.shopify.com": {
+    "site": "accounts.shopify.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://accounts.shopify.com/login"
+  },
+  "cegeptr.omnivox.ca": {
+    "site": "cegeptr.omnivox.ca",
+    "username": "2650016",
+    "url": "https://cegeptr.omnivox.ca/intr/Module/Identification/"
+  },
+  "tiktok - videos, shop & live": {
+    "site": "TikTok - Videos, Shop & LIVE",
+    "username": "miguel_mgl",
+    "url": "android://47sqH1qEyjrAcj2FQUUPF61XgATkyACO2snkTDz7RZ3THGKlRZ6L78Lu02Vgi6N4N-NbC2GYrMWLxlTNEe0vAQ==@com.zhiliaoapp.musically/"
+  },
+  "account.heigit.org": {
+    "site": "account.heigit.org",
+    "username": "fregoufack@gmail.com",
+    "url": "https://account.heigit.org/signup"
+  },
+  "accounts.dsers.com": {
+    "site": "accounts.dsers.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://accounts.dsers.com/accounts/register"
+  },
+  "admission-demo.sram.qc.ca": {
+    "site": "admission-demo.sram.qc.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://admission-demo.sram.qc.ca/creer-compte"
+  },
+  "admission.sram.qc.ca": {
+    "site": "admission.sram.qc.ca",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://admission.sram.qc.ca/creer-compte"
+  },
+  "ai.opensubtitles.com": {
+    "site": "ai.opensubtitles.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://ai.opensubtitles.com/ai-web/login"
+  },
+  "ais-dev-acizhekag7nnofopbyux6t-137622732421.us-east1.run.app": {
+    "site": "ais-dev-acizhekag7nnofopbyux6t-137622732421.us-east1.run.app",
+    "username": "fregoufack@gmail.com",
+    "url": "https://ais-dev-acizhekag7nnofopbyux6t-137622732421.us-east1.run.app/"
+  },
+  "api.watchmode.com": {
+    "site": "api.watchmode.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://api.watchmode.com/requestApiKey/"
+  },
+  "app.sonetel.com": {
+    "site": "app.sonetel.com",
+    "username": "miguel",
+    "url": "https://app.sonetel.com/register"
+  },
+  "app.zenserp.com": {
+    "site": "app.zenserp.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://app.zenserp.com/register"
+  },
+  "appleid.apple.com": {
+    "site": "appleid.apple.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://appleid.apple.com/auth/authorize"
+  },
+  "clawbro.ai": {
+    "site": "clawbro.ai",
+    "username": "fregoufack@gmail.com",
+    "url": "https://clawbro.ai/fr"
+  },
+  "connections-auth.stripe.com": {
+    "site": "connections-auth.stripe.com",
+    "username": "freddy miguel",
+    "url": "https://connections-auth.stripe.com/auth"
+  },
+  "discord.com": {
+    "site": "discord.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://discord.com/login"
+  },
+  "finapp.pp.yodlee.com": {
+    "site": "finapp.pp.yodlee.com",
+    "username": "4540039988558687",
+    "url": "https://finapp.pp.yodlee.com/finapp/10003600/"
+  },
+  "fitcals.lovable.app": {
+    "site": "fitcals.lovable.app",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://fitcals.lovable.app/"
+  },
+  "home.openweathermap.org": {
+    "site": "home.openweathermap.org",
+    "username": "freddyflow2",
+    "url": "https://home.openweathermap.org/users/sign_up"
+  },
+  "iboproapp.com": {
+    "site": "iboproapp.com",
+    "username": "6a:2d:2f:03:6a:e4",
+    "url": "https://iboproapp.com/manage-playlists/login/"
+  },
+  "id-preview--7c63596b-c79c-4ee5-993c-d569efaa79d6.lovable.app": {
+    "site": "id-preview--7c63596b-c79c-4ee5-993c-d569efaa79d6.lovable.app",
+    "username": "fregoufack@gmail.com",
+    "url": "https://id-preview--7c63596b-c79c-4ee5-993c-d569efaa79d6.lovable.app/signup"
+  },
+  "id-preview--f71b7639-9108-41b7-98e8-2932f8921058.lovable.app": {
+    "site": "id-preview--f71b7639-9108-41b7-98e8-2932f8921058.lovable.app",
+    "username": "inginieurcutpro@gmail.com",
+    "url": "https://id-preview--f71b7639-9108-41b7-98e8-2932f8921058.lovable.app/auth"
+  },
+  "id.kijiji.ca": {
+    "site": "id.kijiji.ca",
+    "username": "fregoufack@gmail.com",
+    "url": "https://id.kijiji.ca/login"
+  },
+  "learn-organize-focus.preview.emergentagent.com": {
+    "site": "learn-organize-focus.preview.emergentagent.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://learn-organize-focus.preview.emergentagent.com/auth"
+  },
+  "login.circle.so": {
+    "site": "login.circle.so",
+    "username": "fregoufack@gmail.com",
+    "url": "https://login.circle.so/sign_up"
+  },
+  "mon.cegeptr.qc.ca": {
+    "site": "mon.cegeptr.qc.ca",
+    "username": "default",
+    "url": "https://mon.cegeptr.qc.ca/ETW005/SaisieMdp"
+  },
+  "myvip.friedbergdirectav.ca": {
+    "site": "myvip.friedbergdirectav.ca",
+    "username": "Email",
+    "url": "https://myvip.friedbergdirectav.ca/register/step2"
+  },
+  "newsapi.org": {
+    "site": "newsapi.org",
+    "username": "fregoufack@gmail.com",
+    "url": "https://newsapi.org/register"
+  },
+  "passport.alibabacloud.com": {
+    "site": "passport.alibabacloud.com",
+    "username": "hj",
+    "url": "https://passport.alibabacloud.com/register/enter_fill_email.htm"
+  },
+  "platform.fatsecret.com": {
+    "site": "platform.fatsecret.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://platform.fatsecret.com/register"
+  },
+  "preview-react_native-9bfkcx-fbczoqdoes7t9xqodxmsgo.onspace.b": {
+    "site": "preview-react_native-9bfkcx-fbczoqdoes7t9xqodxmsgo.onspace.b",
+    "username": "fregoufack@gmail.com",
+    "url": "https://preview-react_native-9bfkcx-fbczoqdoes7t9xqodxmsgo.onspace.build/auth/signup"
+  },
+  "sso.crunchyroll.com": {
+    "site": "sso.crunchyroll.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://sso.crunchyroll.com/fr/login"
+  },
+  "www.amazon.com": {
+    "site": "www.amazon.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.amazon.com/ap/signin"
+  },
+  "www.amazon.fr": {
+    "site": "www.amazon.fr",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.amazon.fr/"
+  },
+  "www.avatrade.ca": {
+    "site": "www.avatrade.ca",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.avatrade.ca/"
+  },
+  "www.canva.com": {
+    "site": "www.canva.com",
+    "username": "miguelfreddy65@gmail.com",
+    "url": "https://www.canva.com/settings/login-and-security"
+  },
+  "www.crunchlabs.com": {
+    "site": "www.crunchlabs.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.crunchlabs.com/account/login"
+  },
+  "www.easemate.ai": {
+    "site": "www.easemate.ai",
+    "username": "miguel",
+    "url": "https://www.easemate.ai/image-to-video-generator"
+  },
+  "www.edamam.com": {
+    "site": "www.edamam.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.edamam.com/"
+  },
+  "www.gumloop.com": {
+    "site": "www.gumloop.com",
+    "username": "default",
+    "url": "https://www.gumloop.com/settings/profile/credentials"
+  },
+  "www.kijiji.ca": {
+    "site": "www.kijiji.ca",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.kijiji.ca/register/personal"
+  },
+  "www.opensubtitles.com": {
+    "site": "www.opensubtitles.com",
+    "username": "freddyflow2",
+    "url": "https://www.opensubtitles.com/"
+  },
+  "www.roblox.com": {
+    "site": "www.roblox.com",
+    "username": "mgl16on",
+    "url": "https://www.roblox.com/fr/login"
+  },
+  "www.skool.com": {
+    "site": "www.skool.com",
+    "username": "fregoufack@gmail.com",
+    "url": "https://www.skool.com/qg-ia/about"
+  },
+  "www.themoviedb.org": {
+    "site": "www.themoviedb.org",
+    "username": "freddy",
+    "url": "https://www.themoviedb.org/signup"
+  },
+  "xalaflix.men": {
+    "site": "xalaflix.men",
+    "username": "fregoufack@gmail.com",
+    "url": "https://xalaflix.men/login"
+  },
+  "yournovel.app": {
+    "site": "yournovel.app",
+    "username": "fregoufack@gmail.com",
+    "url": "https://yournovel.app/"
+  },
+  "account.apple.com": {
+    "site": "account.apple.com",
+    "username": "default",
+    "url": "https://account.apple.com/account/manage"
+  },
+  "auth.tcmedialivres.com": {
+    "site": "auth.tcmedialivres.com",
+    "username": "freddy.miguel.goufack.souna.01@edu.cegeptr.qc.ca",
+    "url": "https://auth.tcmedialivres.com/oauth2/register"
+  }
+}

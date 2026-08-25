@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS Dashboard</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0a0f;color:#e6e6ff;font-family:monospace;padding:16px}
+h1{font-size:20px;margin-bottom:12px}
+.card{background:#1a1a2e;border:1px solid #2a2a40;border-radius:12px;padding:16px;margin-bottom:12px}
+.bar{height:12px;background:#0f0f1a;border-radius:6px;overflow:hidden;margin:6px 0}
+.fill{height:100%;background:#3a5bff;transition:width .5s}
+pre{white-space:pre-wrap;font-size:12px;color:#aaa;max-height:200px;overflow-y:auto}
+a{color:#3a5bff}
+</style>
+</head>
+<body>
+<h1>JARVIS Dashboard</h1>
+<div class="card">
+  <div>CPU <span id="cpu">-</span>% <div class="bar"><div id="cpuB" class="fill" style="width:0%"></div></div></div>
+  <div>RAM <span id="ram">-</span>% <div class="bar"><div id="ramB" class="fill" style="width:0%"></div></div></div>
+  <div>Disque <span id="disk">-</span>% <div class="bar"><div id="diskB" class="fill" style="width:0%"></div></div></div>
+  <div style="margin-top:8px;font-size:12px;color:#888" id="glasses">-</div>
+</div>
+<div class="card">
+  <h3>Profil actuel: <span id="profile">-</span> <button onclick="switchP('perso')">Perso</button> <button onclick="switchP('travail')">Travail</button></h3>
+  <div id="stats" style="font-size:12px;color:#aaa;margin-top:8px"></div>
+  <h4 style="margin-top:10px">Memoire HyperDB</h4>
+  <pre id="mem">-</pre>
+</div>
+<div class="card">
+  <h3>Logs vocaux recents</h3>
+  <pre id="logs">Chargement...</pre>
+</div>
+<div class="card">
+  <h3>Plugins</h3>
+  <pre id="plugins">-</pre>
+  <p style="font-size:11px;color:#666">Depose un .py dans plugins/ et redemarre JARVIS</p>
+</div>
+<div class="card">
+  <h3>Veilles actives</h3>
+  <pre id="watches">-</pre>
+</div>
+<script>
+async function refresh(){
+  const s=await fetch('/api/status').then(r=>r.json());
+  document.getElementById('cpu').textContent=s.cpu; document.getElementById('cpuB').style.width=s.cpu+'%';
+  document.getElementById('ram').textContent=s.ram; document.getElementById('ramB').style.width=s.ram+'%';
+  document.getElementById('disk').textContent=s.disk; document.getElementById('diskB').style.width=s.disk+'%';
+  document.getElementById('glasses').textContent=s.glasses;
+  const p=await fetch('/api/profile').then(r=>r.json()).catch(()=>({profile:'perso'}));
+  document.getElementById('profile').textContent=p.profile;
+  document.getElementById('stats').textContent=`Corrections: ${p.corrections||0} | Rappels: ${p.reminders||0}`;
+  document.getElementById('mem').textContent=await fetch('/api/memory?q=').then(r=>r.json()).then(j=>j.result||'-').catch(()=>'-');
+  document.getElementById('plugins').textContent=await fetch('/api/plugins').then(r=>r.json()).then(j=>j.plugins.join('\n')||'Aucun').catch(()=>'-');
+  document.getElementById('watches').textContent=await fetch('/api/watches').then(r=>r.json()).then(j=>j.watches.join('\n')||'-').catch(()=>'-');
+  const logs=await fetch('/api/logs').then(r=>r.text()).catch(()=>'-');
+  document.getElementById('logs').textContent=logs.slice(-3000);
+}
+async function switchP(name){ await fetch('/api/profile?set='+name); refresh(); }
+setInterval(refresh,2000); refresh();
+</script>
+</body>
+</html>
